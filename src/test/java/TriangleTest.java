@@ -1,9 +1,16 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
+
 
 public class TriangleTest {
+
+    private static Logger logger = LoggerFactory.getLogger(TriangleTest.class);
+
     @Test
     public void simpleTringleTest() {
+        //logger.info("simple test");
         Assertions.assertEquals(6.0, Main.triangleSquare(3,4,5));
     }
 
